@@ -36,6 +36,14 @@ impl PBXProj {
             .collect()
     }
 
+    pub fn get_group(&self, id: &str) -> Option<&PBXGroup> {
+        match self.objects.get(id) {
+            Some(PBXObject::PBXGroup(group)) => Some(group),
+            Some(_) => None,
+            None => None,
+        }
+    }
+
     pub fn get(&self, id: &str) -> Option<&PBXObject> {
         self.objects.get(id)
     }

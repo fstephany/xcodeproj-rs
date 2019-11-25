@@ -24,7 +24,6 @@ fn main() {
         );
     }
 
-    // Top Level group is C9EB56B41EAE33C1000EC5F4
     println!("Groups:");
     println!("=======");
     for group in proj.groups().iter() {
