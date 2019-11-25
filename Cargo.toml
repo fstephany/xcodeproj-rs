@@ -1,0 +1,16 @@
+[package]
+name = "xcodeproj"
+version = "0.0.1"
+authors = ["Francois Stephany <francois@tamere.eu>"]
+description = "An xcodeproj/pbxproj reader"
+license = "MIT"
+repository = "https://github.com/fstephany/xcodeproj-rs"
+keywords = ["pbxproj", "parser", "xcode", "xocdeproj"]
+categories = ["parser-implementations"]
+edition = "2018"
+
+[dependencies]
+# plist = { git = "https://github.com/fstephany/rust-plist", branch = "ascii-reader" }
+
+plist = { path = "../rust-plist/"}
+serde = { version = "1.0", features = ["derive"] }
